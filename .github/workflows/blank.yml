@@ -40,5 +40,6 @@ jobs:
       - name: Run a multi-line script
         if: ${{ github.event.inputs.name != null }}
         run: |
+          echo Hi ${{ github.event.inputs.name }}
           echo Add other actions to build,
           echo test, and deploy your project.
